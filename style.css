@@ -1,0 +1,168 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+    color: seashell;
+    background-color: black;
+    font-size: 16px;
+    text-align: center;
+}
+
+a {
+    color: seashell;
+}
+
+a:hover {
+    color: orange;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 33px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 0; /* pentru ca are margin adaugata by default. Verifica in dev tools. */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Header */
+header {
+    width: 100%;
+    position:fixed;
+    z-index: 1;
+    padding: 8px 10px;
+    background-color: #000;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+    margin-left: 10px;
+}
+
+nav {
+    /* text-align: right; */
+    /* flex-grow: 1; */
+}
+
+nav a {
+    margin: 0 10px 0 0;
+    text-decoration: underline;
+}
+
+/* Main */
+
+main {
+    padding: 70px 0 0 0;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    /* border: 2px solid red; */
+}
+
+
+/* Mission */
+
+#mission {
+    min-height: 700px;
+    background-image: url(images/img-mission-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 20px 0;
+}
+
+#mission .banner {
+    margin: auto 0;
+    background-color: black;
+    width: 100%;
+}
+
+/* Store Section */
+#store {
+    margin: 0 0 20px 0;
+    
+}
+
+.item img {
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.item p {
+    font-weight: bold;
+}
+
+/* Locations */
+#locations {
+    background-color: grey;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(images/img-locations-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.location {
+    padding: 10px;
+    margin: 0 20px;
+    background-color: black;
+    min-width: 280px;
+}
+
+#locations h2 {
+    margin: 0 0 5px 0;
+}
+
+
+/* Contact */
+#contact {
+    min-height: 200px;
+}
+
+/* Footer */
+footer {
+    text-align: left;
+    padding: 20px;
+}
